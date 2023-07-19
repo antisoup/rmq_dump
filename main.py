@@ -27,7 +27,7 @@ class QueueViewer:
         return msgs
 
 if __name__ == '__main__':
-    ip = '' ############################## INSERT RMQ IP HERE ###############################################
+    ip = '10.205.81.142' ############################## INSERT RMQ IP HERE ###############################################
     viewer = QueueViewer(ip, 'sava')
     messages = viewer.view_queue()
     with open('./dump.txt', 'w') as f:
